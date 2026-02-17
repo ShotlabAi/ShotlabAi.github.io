@@ -7,87 +7,71 @@
   <meta name="description" content="Shotlab.ai — AI commercial prototyping and premium concept reels." />
 
   <style>
-    :root{
-      --bg:#07070a;
-      --panel:rgba(255,255,255,.05);
-      --stroke:rgba(255,255,255,.12);
-      --text:rgba(255,255,255,.93);
-      --muted:rgba(255,255,255,.64);
-      --muted2:rgba(255,255,255,.48);
-      --radius:18px;
-    }
-    *{ box-sizing:border-box; }
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background:#07070a;
-      color:var(--text);
-    }
-    .wrap{ max-width:1100px; margin:0 auto; padding:60px 20px; }
-
-    h1{ margin:0; font-size:32px; }
-    .sub{ color:var(--muted); margin-top:10px; line-height:1.5; }
-
-    .hero{
-      margin-bottom:40px;
-      border:1px solid var(--stroke);
-      border-radius:20px;
-      overflow:hidden;
-      background:var(--panel);
+      color:#f2f2f2;
     }
 
-    .hero img{
-      width:100%;
-      height:350px;
-      object-fit:cover;
-      display:block;
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:60px 20px;
     }
 
-    .heroContent{
-      padding:20px;
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap:15px;
+    h1{
+      margin:0;
+      font-size:32px;
+    }
+
+    .sub{
+      color:#aaa;
+      margin-top:10px;
+      line-height:1.5;
     }
 
     .btn{
-      border:1px solid var(--stroke);
+      border:1px solid #333;
       padding:12px 18px;
       border-radius:12px;
       text-decoration:none;
       color:white;
       display:inline-block;
+      margin-top:15px;
     }
 
     .grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(450px,1fr));
-      gap:20px;
+      grid-template-columns:repeat(auto-fit, minmax(480px,1fr));
+      gap:25px;
+      margin-top:40px;
     }
 
     .card{
-      border:1px solid var(--stroke);
-      border-radius:16px;
+      border:1px solid #222;
+      border-radius:18px;
       overflow:hidden;
-      background:var(--panel);
+      background:#101012;
     }
 
     .card h3{
-      padding:15px;
+      padding:18px;
       margin:0;
+      font-size:18px;
     }
 
     .video{
       width:100%;
       aspect-ratio:16/9;
-      background:black;
+      display:block;
+      border:0;
     }
 
     footer{
-      margin-top:50px;
+      margin-top:60px;
       font-size:12px;
-      color:var(--muted2);
+      color:#777;
     }
   </style>
 </head>
@@ -95,39 +79,35 @@
 <body>
   <div class="wrap">
 
-    <section class="hero">
-      <img src="assets/hero.jpg" alt="Shotlab.ai Hero Image">
-      <div class="heroContent">
-        <div>
-          <h1>Shotlab.ai</h1>
-          <div class="sub">
-            AI commercial prototyping & premium concept reels.
-          </div>
-        </div>
-        <div>
-          <a class="btn" href="mailto:szymon@dreamproductions.eu">
-            Contact
-          </a>
-        </div>
-      </div>
-    </section>
+    <h1>Shotlab.ai</h1>
+    <div class="sub">
+      AI commercial prototyping & premium concept reels.
+    </div>
+
+    <a class="btn" href="mailto:szymon@dreamproductions.eu">
+      Contact
+    </a>
 
     <section class="grid">
 
+      <!-- COMMERCIAL REEL (YouTube) -->
       <div class="card">
-        <h3>Commercial Reel </h3>
-        <video class="video" controls>
-          <source src="videos/reel-beauty.mp4" type="video/mp4">
-        </video>
+        <h3>Commercial Reel</h3>
+        <iframe 
+          class="video"
+          src="https://www.youtube.com/embed/7uz6S5Gz0qE"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
 
+      <!-- CLIENT PORTFOLIO (Vimeo) -->
       <div class="card">
-        <h3>Client Portfolio</h3>
+        <h3>Clients</h3>
         <iframe
           class="video"
-          src="https://player.vimeo.com/video/123456789"
-          frameborder="0"
-          allow="autoplay; fullscreen"
+          src="https://player.vimeo.com/video/313711584"
+          allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen>
         </iframe>
       </div>
@@ -135,6 +115,8 @@
     </section>
 
     <footer>
+      AI commercial reel – concept & portfolio showcase. All brands, logos and trademarks shown are used for visual demonstration only. This video is not an advertisement, endorsement or promotion of any real product or service.
+      <br><br>
       © <span id="y"></span> Shotlab.ai
     </footer>
 
@@ -145,3 +127,4 @@
   </script>
 </body>
 </html>
+
