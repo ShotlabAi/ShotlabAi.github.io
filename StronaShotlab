@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cine AI — Portfolio</title>
+  <meta name="description" content="AI commercial portfolio — concept reels & case-style demos." />
+  <style>
+    :root { color-scheme: dark; }
+    body { margin:0; font-family: Arial, sans-serif; background:#0b0b0c; color:#f2f2f2; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+    header { display:flex; justify-content:space-between; gap:20px; align-items:flex-start; flex-wrap:wrap; }
+    h1 { margin:0; font-size: 30px; letter-spacing: .5px; }
+    .tag { color:#b7b7b7; margin-top:10px; line-height:1.5; max-width:600px; }
+    .cta a { color:#f2f2f2; text-decoration:none; border:1px solid #2a2a2c; padding:12px 18px; border-radius:12px; display:inline-block; }
+    .cta a:hover { border-color:#4a4a4f; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 24px; margin-top: 50px; }
+    .card { border:1px solid #1f1f22; border-radius:18px; overflow:hidden; background:#101012; }
+    .card .meta { padding:18px 18px 0 18px; }
+    .card h2 { margin:0; font-size: 18px; font-weight: 700; }
+    .card p { margin:10px 0 18px 0; color:#b7b7b7; font-size: 14px; line-height:1.5; }
+    .video { width:100%; aspect-ratio: 16/9; background:#000; }
+    footer { margin-top: 70px; color:#8f8f8f; font-size: 12px; line-height:1.6; }
+    .small { color:#9d9d9d; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Cine AI</h1>
+        <div class="tag">
+          AI commercial studio. Concept-driven advertising films, rapid prototyping and experimental branded visuals powered by AI.
+        </div>
+      </div>
+      <div class="cta">
+        <a href="mailto:szymon@dreamproductions.eu">Contact</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <div class="meta">
+          <h2>Commercial Reel — Beauty</h2>
+          <p>AI-generated luxury beauty concept. Cinematic lighting, premium textures, high-end commercial finish.</p>
+        </div>
+        <video class="video" controls playsinline preload="metadata">
+          <source src="reel1.mp4" type="video/mp4" />
+        </video>
+      </article>
+
+      <article class="card">
+        <div class="meta">
+          <h2>Commercial Reel — Tech</h2>
+          <p>AI commercial prototype for technology brand. Minimal narrative, strong visual identity.</p>
+        </div>
+        <video class="video" controls playsinline preload="metadata">
+          <source src="reel2.mp4" type="video/mp4" />
+        </video>
+      </article>
+    </section>
+
+    <footer>
+      <div class="small">
+        AI commercial reel – concept & portfolio showcase. All brands shown are used for visual demonstration only. No real products or services are being advertised.
+      </div>
+      <div style="margin-top:12px;">
+        © <span id="y"></span> Shotlab AI
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
